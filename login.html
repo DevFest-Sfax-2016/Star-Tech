@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css"></style>
+
+
+<style type="text/css"></style>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+</head><body>
+
+<header class="w3-container w3-red">
+  <h1>Meilleur</h1>
+</header>
+
+
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+
+<div class="w3-container">
+  <h2></h2>
+  <p></p>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="http://www.dimakopoulosi.gr/wp-content/uploads/lifestyle-logo.jpg" style="width: 100%; display: block;">
+  <img class="mySlides" src="http://images.huffingtonpost.com/2016-08-08-1470666138-4805666-Lifestyle1.jpg" style="width: 100%; display: none;">
+  <img class="mySlides" src="http://chirohealing.com/wp-content/uploads/2015/05/lifestyle-advice-las-vegas1.jpg" style="width: 100%; display: none;">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">❮</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">❯</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white w3-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+ 
+
+<div class="w3-row-padding w3-section">
+
+  <div class="w3-half">
+    <div class="w3-card-2">
+      
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+
+<div class="w3-container w3-blue">
+  <h2>Sing up</h2>
+</div>
+
+
+  <p>
+  <label>First Name</label>
+  <input class="w3-input" type="text"></p>
+  <p>
+  <label>Last Name</label>
+  <input class="w3-input" type="text"></p>
+  <p>
+  <label>Email</label>
+  <input class="w3-input" type="text"></p>
+    <p>
+  <label>Password</label>
+ <input class="w3-input" name="passid" type="password">  </p>
+  <p>
+  <label>SEX :</label>  
+<input class="w3-radio" type="radio" name="gender" value="male">
+<label class="w3-validate">Male</label>
+
+<input class="w3-radio" type="radio" name="gender" value="female">
+<label class="w3-validate">Female</label> </p>
+
+  <a href="wabpage.html"><button class="w3-btn-block w3-red">SING UP</button></a>
+
+
+
+ 
+      <div class="w3-container">
+        <p>.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-card-2">
+      
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+
+<div action="form.asp" class="w3-card-4">
+  <div class="w3-container w3-brown">
+    <h2>sing in</h2>
+  </div>
+  <form class="w3-container" action="form.asp">
+    <p>      
+    <label class="w3-label w3-text-red"><b>Email</b></label>
+    <input class="w3-input w3-border w3-sand" name="first" type="text"></p>
+    <p>      
+    <label class="w3-label w3-text-red"><b>Password</b></label>
+    <input class="w3-input w3-border w3-sand" name="last" type="text"></p>
+    <p>
+    <button class="w3-btn w3-brown">Register</button></p>
+  </form>
+</div>
+<p>
+<button class="w3-btn w3-ripple w3-blue">FACEBOOK</button>
+<button class="w3-btn w3-ripple w3-red">GMAIL</button>
+</p>
+
+ 
+ <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+  <p>this is a tex....</p>
+</div> 
+      <div class="w3-container">
+     
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ <div class="w3-panel w3-light-grey">
+  <span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>
+  <p class="w3-xlarge" style="margin-top:-40px">
+ 
+</p></div> 
+
+
+
+<script>// Write JavaScript here </script><script>// Write JavaScript here </script></body>
